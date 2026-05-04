@@ -1,0 +1,13 @@
+/* Exemplo de seletor contextual (todo b dentro de p) */
+p b {
+    color: red;
+}
+
+b {
+    color: blue !important;
+}
+
+/* !important */
+
+/* Exemplo de agrupamento de seletores */
+/* p, b */

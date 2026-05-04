@@ -1,0 +1,17 @@
+/* pseudo-classes */
+/* Link inicial (antes do clique) */
+a:link {
+    color: orange;
+}
+/* Link visitando (após o clique) */
+a:visited {
+    color: red;
+}
+/* Link ativo (está sendo clicado) */
+a:hover {
+    color: green;
+}
+/* Link com mouse sobre ele */
+a:active {
+    color: pink;
+}

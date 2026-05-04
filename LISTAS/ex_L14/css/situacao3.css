@@ -1,0 +1,9 @@
+.box {
+    color: red;
+    border: 5px dashed blue;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+
+    /* T R B L */
+}
