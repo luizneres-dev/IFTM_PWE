@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.botao {
+    background-color: red;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+.botao:hover {
+    background-color: green;
+    box-shadow: 5px 5px 5px rgb(211, 154, 154);
+}
+
+.botao:active {
+    /* transform: scale(0.9); */
+    /* transform: rotate(360deg); */
+    transform: translateX(10px) scale(1);
+}

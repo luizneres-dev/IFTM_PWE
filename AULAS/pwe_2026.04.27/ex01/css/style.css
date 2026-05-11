@@ -7,11 +7,11 @@ a:link {
 a:visited {
     color: red;
 }
-/* Link ativo (está sendo clicado) */
+/* Link com mouse sobre ele */
 a:hover {
     color: green;
 }
-/* Link com mouse sobre ele */
+/* Link ativo (está sendo clicado) */
 a:active {
     color: pink;
 }
