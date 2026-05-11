@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#zap {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#zap:hover {
+    transform: scale(1.2);
+    margin: 20px;
+    transition: all 0.5s;
+}
