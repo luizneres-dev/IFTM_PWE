@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+.container div {
+    background-color: rgb(193, 193, 193);
+    display: flex;
+    align-items: center;
+}
+
+.container div div {
+    margin: 10px;
+}
+
+.container img {
+    width: 100px;
+    height: 100px;
+}
