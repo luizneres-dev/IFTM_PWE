@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+.box {
+    background-color: rgb(41, 59, 78);
+    border-bottom: 2px solid white;
+}
+
+.box nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Tira as bolinhas das li*/
+    gap: 10px; /* Adiciona espaço entre os itens (opcional) */
+}
+
+.box nav li {
+    border: 2px solid white;
+    flex-direction: row; /* Define a direção do flex */
+    background-color: black;
+    margin: 10px 0 10px 0px;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.box a {
+    color: white;
+    text-decoration: none; /* Tira a decoração do texto (underline do link) */
+}
+
+.box a:hover {
+    color: aquamarine;
+}
+
+.principal {
+    background-color: rgb(34, 16, 57);
+    color: white;
+    height: 100vh; /* Altura igual a 100% da viewport */
+}
+
+.principal h1 {
+    padding-top: 10px;
+    text-align: center;
+    color: cadetblue;
+    text-decoration: underline rgb(183, 183, 183);
+}
+
+.principal div {
+    margin: 10px;
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+}
+
+footer {
+    color: white;
+    background-color: rgb(41, 59, 78);
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid white;
+}
