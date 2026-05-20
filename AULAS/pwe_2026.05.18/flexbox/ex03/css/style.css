@@ -2,11 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* seções impares: cinza */
 section:nth-of-type(odd) {
-    background-color: rgb(166, 166, 166);
+    background-color: rgb(111, 111, 111);
 }
 
 /* seções pares: white */
@@ -16,6 +17,10 @@ section:nth-of-type(even) {
 
 #tecnologias > div > div {
     text-align: center;
+    margin: 15px;
+    padding: 20px;
+    width: 400px;
+    background-color: rgb(233, 233, 233);
 }
 
 #tecnologias p {
@@ -34,9 +39,10 @@ section:nth-of-type(even) {
     display: flex;
     flex-direction: row;
     margin: auto;
-    gap: 10px
+    justify-content: center; /* Centraliza as divs */
 }
 
 .container div {
-    border: 2px solid blue;
+    border: 3px solid blue;
+    border-radius: 10%;
 }
