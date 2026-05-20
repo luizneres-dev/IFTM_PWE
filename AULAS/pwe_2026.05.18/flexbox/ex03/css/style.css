@@ -7,7 +7,7 @@
 
 /* seções impares: cinza */
 section:nth-of-type(odd) {
-    background-color: rgb(111, 111, 111);
+    background-color: rgb(162, 162, 162);
 }
 
 /* seções pares: white */
@@ -17,10 +17,8 @@ section:nth-of-type(even) {
 
 #tecnologias > div > div {
     text-align: center;
-    margin: 15px;
-    padding: 20px;
-    width: 400px;
-    background-color: rgb(233, 233, 233);
+    margin: 10px;
+    padding: 10px;
 }
 
 #tecnologias p {
@@ -31,18 +29,51 @@ section:nth-of-type(even) {
     margin: 25px 0px 25px 0px;
 }
 
+
 #tecnologias img {
     width: 100px;
+}
+
+#produtos img {
+    width: 300px;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     margin: auto;
-    justify-content: center; /* Centraliza as divs */
+    width: 1200px;
+    justify-content: center;
+    /* justify-content: center; Centraliza as divs; */
 }
 
-.container div {
-    border: 3px solid blue;
-    border-radius: 10%;
+.container > div {
+    margin: 20px;
+    flex-grow: 1;
 }
+
+#produtos > div {
+    flex-direction: column;
+}
+
+#produtos > div > div {
+    display: flex;
+}
+
+#produtos > div > div:nth-of-type(odd) {
+    flex-direction: row;
+}
+
+#produtos > div > div:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.texto {
+    margin: auto !important;
+    color: black;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid red;
+    width: 300px;
+    text-align: center;
+}  
