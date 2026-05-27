@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+section:nth-of-type(even) {
+    background-color: white;
+    color: black;
+}
+
+section:nth-of-type(odd) {
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+header ul, li {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+header li {
+    list-style: none;
+    text-align: center;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+header li a:hover {
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 1200px;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+    text-align: center;
+}
+
+.container h3 {
+    color: red;
+}
+
+.botao {
+    width: 200px;
+    background-color: blue;
+    color: white;
+    margin: auto;
+    margin-top: 25px;
+    padding: auto;
+    padding: 20px 0px;
+}
+
+.botao:hover {
+    background-color: rgb(0, 0, 95);
+    cursor: pointer;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.imgWidth {
+    width: 500px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+}
