@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Mudanças no CSS para impressão */
 @media print {
     p {
         color: blueviolet;
@@ -12,9 +13,37 @@
     }
 }
 
-@media screen {
-    p {
-        color: red;
-        font-size: 40px;
+/* Mobile First */
+body {
+    background-color: rgb(250, 255, 147);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div {
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* tablet, desktop, tv */
+@media screen and (min-width: 500px){
+    body {
+        background-color: rgb(149, 149, 149);
+    }
+    
+    .container {
+        flex-direction: row;
+        width: 1200px;
+        margin: auto;
+    }
+
+    section:nth-of-type(even) > .container > div:nth-of-type(even) {
+        width: calc(100% * 2);
+        background-color: aquamarine;
     }
 }
