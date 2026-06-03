@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9);
+}
+
+.container > div {
+    display: flex;
+    border: 2px solid rgb(0, 82, 158);
+    border-radius: 12px;
+    padding: 5px;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.container > div > h2 {
+    padding: 10px;
+    color: rgb(255, 72, 102);
+    text-decoration: underline;
+}
+
+.imgMobile {
+    width: 160px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 1200px;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3);
+    }
+
+    .mescla {
+        grid-column: span 2;
+    }
+
+    .imgDesktop {
+        width: 280px;
+    }
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+}
+
+.teste div:nth-of-type(2) {
+    background-color: pink;
+    flex-grow: 2;
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: repeat(1, 100px 200px); */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container > div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.mescla2 {
+    grid-column: span 2;
+}
