@@ -1,0 +1,170 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+section:nth-of-type(odd) > div {
+    background-color: rgb(35, 35, 35);
+}
+
+section:nth-of-type(even) > div {
+    background-color: rgb(55, 55, 55);
+}
+
+.botao, .botaoCompra {
+    background-color: rgb(38, 133, 11);
+    color: rgb(238, 255, 0);
+    padding: 25px 90px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-left: 25px;
+}
+
+.botaoCompra {
+    padding: 15px 40px;
+    font-size: 15px;
+    margin: auto;
+}
+
+.botao:hover, .botaoCompra:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container, .containerGrid > div {
+    padding: 20px;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: 1;
+    margin: auto;
+}
+
+.containerGrid h3 {
+    text-decoration: underline;
+}
+
+.containerGrid img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.imgGrid img {
+    height: 280px;
+}
+
+h1, h2, h3, p, summary {
+    text-align: justify;
+    margin: 0px 15px 15px 15px;
+}
+
+header ul, li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 176, 10);
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 18px 50px;
+    background-color: rgb(10, 176, 10);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+header a:hover {
+    background-color: yellow;
+    text-decoration: underline;
+    color: rgb(24, 24, 255);
+    transform: scaleX(1.1);
+}
+
+header, main {
+    background-color: rgb(10, 176, 10);
+}
+
+summary {
+    color: rgb(79, 79, 255);
+}
+
+main h1 {
+    text-align: center;
+    color: yellow;
+    text-decoration: underline blue;
+}
+
+main h2 {
+    color: rgb(0, 163, 14);
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    header ul, li {
+        flex-direction: row;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 1200px;
+    }
+
+    .containerGrid {
+        grid-template-columns: repeat(3, 360px);
+        width: 1200px;
+    }
+
+    .botao {
+        margin-left: 220px;
+    }
+}
